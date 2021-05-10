@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+html {
+  scrollbar-color: black rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 2000px;
+}
+
+.nav-link {
+  font-size: 1.3em;
+}
+
+.nav-link:hover {
+  background-color: #333;
+}
+
+.jumbotron img {
+  width: 750px;
+  height: 100%;
+}
+
+.jumbotron p {
+  word-spacing: 20px;
+}
+
+.disc-item {
+  position: relative;
+}
+
+.disc-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.disc-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.disc-item:hover .overlay {
+  opacity: 1;
+}
+
+.disc-item .overlay h3 {
+  font-size: 1.4em;
+}
+
+.disc-item .overlay p {
+  margin-bottom: 0px;
+}
+
+.small-video .with-padding {
+  padding-right: 5px;
+}
+
+.sosmed {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sosmed li {
+  font-size: 2em;
+  text-align: center;
+  margin: 0 30px;
+}
+
+.sosmed li a {
+  text-decoration: none;
+  color: #eee;
+}
+
+@media screen and (max-width: 576px) {
+  .jumbotron .container .display-4 {
+    font-size: 3em;
+    padding-top: 20px;
+  }
+
+  .jumbotron p {
+    word-spacing: 5px;
+  }
+
+  .parent {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .disc-item {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .disc-item img {
+    width: 100%;
+  }
+
+  .large-video iframe {
+    width: 400px;
+    height: 250px;
+  }
+
+  .small-video {
+    flex-direction: column !important;
+  }
+
+  .small-video .with-padding {
+    padding-right: 0;
+  }
+
+  .small-video iframe {
+    margin-bottom: 5px;
+  }
+
+  .sosmed li {
+    margin: 0 15px;
+  }
+}
